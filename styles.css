@@ -1,0 +1,58 @@
+body{
+  background-color: white;
+}
+
+.header{
+  background-color: hotpink;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.title{
+ display: flex;
+ flex-direction: column;
+ border: solid pink 5px; 
+}
+
+h1, h4, p{
+  color: white;
+}
+
+
+section .row2 {
+  border: solid blue 2px;
+  display: flex;
+
+  background-color: rgb(233, 92, 255);
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+div.box1{
+  border: solid green 3px;
+  padding: 20px;
+}
+
+div.box2{
+  border: solid green 3px;
+  padding: 20px;
+}
+
+div.box3{
+  border: solid green 3px;
+  padding: 20px;
+}
+
+@media (max-width: 576px){
+ section .row2 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "box1"
+  "box2"
+  "box3";
+  background-color: red;
+  }
+ }
